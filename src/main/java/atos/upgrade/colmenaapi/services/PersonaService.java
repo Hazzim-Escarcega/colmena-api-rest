@@ -59,7 +59,7 @@ public class PersonaService implements BaseService<Persona> {
         try {
             Optional<Persona> entityOptional = personaDAO.findById(id);
             Persona persona = entityOptional.get();
-            persona = personaDAO.save(persona);
+            persona = personaDAO.save(entity);
             return persona;
         } catch (Exception e) {
             throw new Exception(e.getMessage());

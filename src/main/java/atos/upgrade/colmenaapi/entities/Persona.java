@@ -31,7 +31,7 @@ public class Persona implements Serializable {
     private String nombre;
     @Column(name = "apellido")
     private String apellido;
-    @Column(name = "edad")
+    @Column(name = "dni")
     private int dni;
 
 }
