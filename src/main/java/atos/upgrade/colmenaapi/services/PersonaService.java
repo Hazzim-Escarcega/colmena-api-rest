@@ -37,7 +37,7 @@ public class PersonaService implements BaseService<Persona> {
         } catch (Exception e) {
             throw new Exception(e.getMessage());
         }
-        
+
     }
 
     @Override
@@ -46,11 +46,11 @@ public class PersonaService implements BaseService<Persona> {
         try {
             entity = personaDAO.save(entity);
             return entity;
-            
+
         } catch (Exception e) {
             throw new Exception(e.getMessage());
         }
-        
+
     }
 
     @Override
@@ -73,8 +73,7 @@ public class PersonaService implements BaseService<Persona> {
             if (personaDAO.existsById(id)) {
                 personaDAO.deleteById(id);
                 return true;
-            }
-            else {
+            } else {
                 throw new Exception("No existe el registro con id: " + id);
             }
         } catch (Exception e) {

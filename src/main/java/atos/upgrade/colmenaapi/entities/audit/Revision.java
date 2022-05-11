@@ -36,8 +36,5 @@ public class Revision implements Serializable {
     @Temporal(javax.persistence.TemporalType.TIMESTAMP)
     @RevisionTimestamp
     private java.util.Date revisionDate;
-    
 
-
-    
 }
